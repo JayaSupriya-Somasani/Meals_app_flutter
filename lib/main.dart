@@ -14,10 +14,19 @@ class MyApp extends StatelessWidget {
       title: 'Meals',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+          primarySwatch: Colors.pink,
+          accentColor: Colors.amber,
+          canvasColor: const Color.fromRGBO(255, 254, 229, 1),
+          fontFamily: 'Raleway',
+          textTheme: ThemeData.light().textTheme.copyWith(
+              bodySmall: const TextStyle(color: Color.fromRGBO(20, 51, 51, 1)),
+              bodyLarge: const TextStyle(color: Color.fromRGBO(20, 51, 51, 1)),
+              titleSmall: const TextStyle(
+                  color: Color.fromRGBO(20, 51, 51, 1),
+                  fontFamily: 'RobotoCondensed',
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold))),
       home: CategoriesScreen(),
     );
   }
 }
-
